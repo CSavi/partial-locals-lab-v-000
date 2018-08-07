@@ -1,3 +1,8 @@
 <h1>Student Names</h1>
+<h2>Search Student</h2>
+
+<!--search for student-->
+<%= form_tag students_path, :method => 'get' do %>
+  <p><%= text_field_tag
 
 <%= render partial: 'student', locals: {student: @student} %>
