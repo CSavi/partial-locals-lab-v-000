@@ -3,7 +3,8 @@
 
 <!--search for student-->
 <%= form_tag students_path, :method => 'get' do %>
-  <p><%= text_field_tag :name %>
-    
+  <p><%= text_field_tag :search, params[:search] %>
+     <%= submit_tag "Search", 
+
 
 <%= render partial: 'student', locals: {student: @student} %>
